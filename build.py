@@ -2,6 +2,7 @@
 """scripts/*.md + episodes.json → 루트 index.html + epNN/index.html (self-contained)"""
 import json, re, html, datetime as dt, pathlib
 from urllib.parse import quote
+ISSUE_BODY = quote('영상 링크:\n\n(공개 후 유튜브 링크만 붙여넣고 제출하면, 클로드가 페이지에 반영합니다)')
 
 ROOT = pathlib.Path(__file__).parent
 D = json.load(open(ROOT/'episodes.json', encoding='utf-8'))
@@ -208,7 +209,7 @@ for e in D['episodes']:
 <div class="chips">{chips}</div>
 <div class="t">{html.escape(e["title"])}</div>
 {hook}{dates}
-<div class="btns">{open_btn}<a class="btn" href="https://github.com/Yoo-Mideum/beusel-scripts/issues/new?title={quote(f'[{n}화 업로드 링크] {e["title"]}')}&body={quote('영상 링크:%0A%0A(공개 후 유튜브 링크만 붙여넣고 제출하면, 클로드가 페이지에 반영합니다)')}&labels=upload-link" target="_blank" rel="noopener">영상 링크 등록</a></div>
+<div class="btns">{open_btn}<a class="btn" href="https://github.com/Yoo-Mideum/beusel-scripts/issues/new?title={quote(f'[{n}화 업로드 링크] {e["title"]}')}&body={ISSUE_BODY}&labels=upload-link" target="_blank" rel="noopener">영상 링크 등록</a></div>
 <div class="vlink"></div>{memo}
 </div>''')
 hero = ''
