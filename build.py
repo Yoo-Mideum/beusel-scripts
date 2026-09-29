@@ -66,6 +66,15 @@ h2{font-size:17px;margin:30px 0 10px;font-weight:400}
 .guide{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px 16px 14px 32px;font-size:14px;margin:0}
 .guide li{margin:6px 0} .guide b{font-weight:400;color:var(--acc-ink)}
 code{background:var(--tile);padding:1px 6px;border-radius:6px;font-size:12.5px}
+.tp{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px 14px;margin:0 0 10px}
+.tp .h{display:flex;gap:8px;align-items:center;margin-bottom:4px}
+.tp .h .n{background:var(--tile)}
+.tp .h .sr{font-size:11.5px;color:var(--acc-ink);background:var(--acc-soft);padding:2px 9px;border-radius:999px}
+.tp .t{font-size:15.5px;color:var(--ink);line-height:1.45}
+.tp .hk{font-size:13px;color:var(--mut);margin:4px 0 2px}
+.tp .st{font-size:12.5px;color:var(--mut)}.tp .st b{font-weight:400;color:var(--acc-ink)}
+.tp .stat{font-size:11.5px;color:var(--mut);margin-top:6px}
+.tsub{font-size:13px;color:var(--mut);margin:0 0 12px}
 footer{text-align:center;color:var(--mut);font-size:12px;margin-top:36px}
 .back{font-size:13px;color:var(--mut);text-decoration:none;display:inline-block;margin-bottom:10px}
 .meta{display:flex;gap:12px;flex-wrap:wrap;font-size:13px;color:var(--mut);margin:6px 0 14px} .meta b{color:var(--ink);font-weight:400}
@@ -216,6 +225,12 @@ hero = ''
 if nxt:
     e, shoot, pub = nxt; dd = (pub - today).days
     hero = f'<div class="hero"><div class="big">D-{dd}</div><div class="s"><b>{e["n"]}화 공개 {fmtw(pub)}</b><br>촬영 {fmtw(shoot)} · {html.escape(e["status"])}</div></div>'
+TP = json.load(open(ROOT/'topics.json', encoding='utf-8')) if (ROOT/'topics.json').exists() else None
+topics_html = ''
+if TP:
+    items = ''.join(f'''<div class="tp"><div class="h"><span class="n">{x["id"]}</span><span class="sr">{html.escape(x["series"])}</span></div><div class="t">{html.escape(x["title"])}</div><div class="hk">“{html.escape(x["hook"])}”</div><div class="st">공부 유도 → <b>{html.escape(x["study"])}</b></div><div class="stat">{html.escape(x["status"])}</div></div>''' for x in TP['topics'])
+    legend = ' · '.join(f'<b>{html.escape(k)}</b> {html.escape(v)}' for k, v in TP['series'].items())
+    topics_html = f'<h2>주제 후보 {len(TP["topics"])}개</h2><p class="tsub">{html.escape(TP["note"])}<br>{legend}</p>{items}'
 hub = HEAD('뷰셀 대본 보드') + f"""
 <div class="wrap">
 <div class="topline"></div>
@@ -224,6 +239,7 @@ hub = HEAD('뷰셀 대본 보드') + f"""
 <p class="sub">대본 제공 <b>수요일</b> → 촬영 <b>금요일</b> → 공개 <b>다음주 수요일</b>. 각 회차 카드에서 대본을 열고, 공개 후 “영상 링크 등록”으로 링크를 남겨주세요.</p>
 {hero}
 {''.join(cards)}
+{topics_html}
 <h2>가이드</h2>
 <ul class="guide">
 <li><b>톤</b> — 차갑게. 단정문, 한 문장 한 정보, 감정어 금지. 2580·리뷰엉이 속도. 리스크 구간만 느리게.</li>

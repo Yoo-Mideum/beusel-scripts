@@ -22,3 +22,6 @@ GitHub Pages 배포. 새 회차 추가 순서:
 
 ## 영상 링크
 - 허브의 "영상 링크 등록" 버튼 → `upload-link` 라벨 Issue 생성. 클로드가 Issue를 읽어 `episodes.json`의 해당 회차에 `"video": "URL"`을 넣고 build·push 후 Issue 닫기.
+
+## 주제 후보
+- `topics.json`에 회차 후보 20개(시리즈 태그·훅·공부 유도 질문·상태). 허브 하단 "주제 후보" 섹션에 자동 렌더. 회차로 확정되면 status를 "N화 확정"으로 바꾸고 episodes.json에 추가.
