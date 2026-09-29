@@ -1,0 +1,372 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>1화 · 화장품으로 돈 버는 일곱 가지 길, 그리고 지금 열리는 하나</title><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet"><style>
+:root{
+  --g1:#E9D9B3;--g2:#D9B97E;--g3:#C99A5E;--g4:#B57F55;
+  --grad:linear-gradient(90deg,var(--g1),var(--g2),var(--g3),var(--g4));
+  --bg:#FAF8F4;--card:#FFFFFF;--tile:#F3F0EA;--ink:#22201C;--mut:#7A7368;--line:#E8E3DA;
+  --acc:#B98A4A;--acc-ink:#8C6224;--acc-soft:#F3E7CC;
+  --screen-bg:#EEF1F0;--screen-ink:#4E6660;--quote-bg:#F7F1E4;--quote-ink:#6E5326
+}
+@media(prefers-color-scheme:dark){:root{
+  --bg:#121110;--card:#1A1816;--tile:#242120;--ink:#EDE7DB;--mut:#8F877B;--line:#2B2724;
+  --acc:#D2AA6C;--acc-ink:#E3C48E;--acc-soft:#3B3020;
+  --screen-bg:#1F2422;--screen-ink:#A9C2B8;--quote-bg:#26211A;--quote-ink:#D8BE8E
+}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'Gowun Dodum','Noto Sans KR',system-ui,sans-serif;line-height:1.7;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+.wrap{max-width:600px;margin:0 auto;padding:26px 18px 80px}
+.topline{height:2px;background:var(--grad);opacity:.8;border-radius:999px;margin-bottom:22px}
+.head{display:flex;justify-content:space-between;font-size:12.5px;color:var(--mut);letter-spacing:.04em}
+h1{font-size:27px;margin:8px 0 8px;line-height:1.3;color:var(--ink);font-weight:400}
+.sub{font-size:14px;color:var(--mut);margin:0 0 24px}
+.sub b{color:var(--ink);font-weight:400}
+h2{font-size:17px;margin:30px 0 10px;font-weight:400}
+.card{display:block;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:20px 18px 18px;margin:0 0 16px}
+.chips{display:flex;gap:8px;align-items:center;margin-bottom:10px}
+.badge{display:inline-block;padding:3px 12px;border-radius:999px;font-size:12px}
+.s0{background:var(--tile);color:var(--mut)}
+.s1{background:var(--acc-soft);color:var(--acc-ink)}
+.s2{background:var(--acc);color:#1A1612}
+.s3{background:var(--g4);color:#fff}
+.s4{background:var(--ink);color:var(--bg)}
+.n{display:inline-block;padding:3px 10px;border-radius:999px;font-size:12px;background:var(--tile);color:var(--mut)}
+.card .t{font-size:19px;line-height:1.45;color:var(--acc-ink);margin:0 0 8px}
+.card .hook{font-size:14px;color:var(--mut);margin:0 0 14px;line-height:1.6}
+.dates{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:14px}
+.tile{background:var(--tile);border-radius:12px;padding:10px 12px}
+.tile .k{font-size:11.5px;color:var(--mut)} .tile .v{font-size:14.5px;font-variant-numeric:tabular-nums;margin-top:2px}
+.tile .w{font-size:11px;color:var(--mut)}
+.btns{display:flex;gap:8px;flex-wrap:wrap}
+.btn{display:inline-block;padding:9px 16px;border-radius:999px;border:1px solid var(--acc);color:var(--acc-ink);font-size:14px;text-decoration:none;background:transparent;font-family:inherit;cursor:pointer}
+.btn.primary{background:var(--acc);border-color:var(--acc);color:#1A1612}
+.btn:disabled{opacity:.4;cursor:default}
+.vlink{font-size:13px;color:var(--mut);margin-top:10px;word-break:break-all}
+.vlink a{color:var(--acc-ink)}
+.memo{font-size:12.5px;color:var(--mut);margin-top:10px}
+.hero{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:16px 18px;margin-bottom:18px;display:flex;gap:16px;align-items:center}
+.hero .big{font-size:30px;color:var(--acc-ink);white-space:nowrap;font-variant-numeric:tabular-nums}
+.hero .s{font-size:13.5px;color:var(--mut);line-height:1.5} .hero .s b{font-weight:400;color:var(--ink)}
+.guide{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px 16px 14px 32px;font-size:14px;margin:0}
+.guide li{margin:6px 0} .guide b{font-weight:400;color:var(--acc-ink)}
+code{background:var(--tile);padding:1px 6px;border-radius:6px;font-size:12.5px}
+footer{text-align:center;color:var(--mut);font-size:12px;margin-top:36px}
+.back{font-size:13px;color:var(--mut);text-decoration:none;display:inline-block;margin-bottom:10px}
+.meta{display:flex;gap:12px;flex-wrap:wrap;font-size:13px;color:var(--mut);margin:6px 0 14px} .meta b{color:var(--ink);font-weight:400}
+.tools{display:flex;gap:8px;margin-bottom:18px}
+.tools .btn{flex:1;text-align:center}
+.toc{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:18px}
+.toc a{font-size:12.5px;text-decoration:none;color:var(--mut);background:var(--card);border:1px solid var(--line);border-radius:999px;padding:4px 10px}
+.toc a b{color:var(--acc-ink);margin-right:4px;font-variant-numeric:tabular-nums;font-weight:400}
+article{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px 20px;font-size:16.5px;line-height:1.9}
+article h2{font-size:18px;margin:34px 0 12px;padding-top:18px;border-top:1px solid var(--line);scroll-margin-top:14px}
+article h2:first-child{border-top:0;margin-top:0;padding-top:0}
+.time{display:inline-block;background:var(--acc-soft);color:var(--acc-ink);font-size:11.5px;padding:1px 8px;border-radius:6px;margin-right:8px;vertical-align:middle;font-variant-numeric:tabular-nums}
+article p{margin:0 0 13px}
+.note{margin:0 0 18px;padding:9px 14px;border-left:2px solid var(--acc);background:var(--quote-bg);color:var(--quote-ink);font-size:13.5px;border-radius:0 10px 10px 0}
+.screen{display:flex;gap:9px;align-items:flex-start;background:var(--screen-bg);color:var(--screen-ink);border-radius:10px;padding:8px 12px;font-size:13.5px;margin:4px 0 16px;line-height:1.5}
+.screen span{flex:0 0 auto;border:1px solid var(--screen-ink);color:var(--screen-ink);font-size:10.5px;padding:0 6px;border-radius:5px;margin-top:3px}
+mark{background:var(--acc-soft);color:var(--ink);padding:0 4px;border-radius:4px}
+figure{margin:6px 0 20px} figure img{width:100%;border-radius:12px;display:block} figcaption{font-size:12px;color:var(--mut);margin-top:6px;text-align:center}
+.src{font-size:12px;color:var(--mut);margin-top:22px;padding-top:12px;border-top:1px dashed var(--line)} .src a{word-break:break-all;color:var(--acc-ink)}
+.pr{position:fixed;inset:0;background:#000;color:#fff;z-index:50;display:none;flex-direction:column}
+.pr.on{display:flex}
+.pbar{display:flex;gap:12px;align-items:center;padding:10px 14px;background:#111;font-size:12.5px;color:#aaa;flex-wrap:wrap}
+.pbar button{background:#333;color:#fff;border:0;padding:7px 12px;border-radius:8px;font-family:inherit}
+.pbar input{width:90px;vertical-align:middle}
+.ptext{flex:1;overflow:auto;padding:40vh 7% 60vh;font-size:38px;line-height:1.7;font-weight:600}
+.ptext p{margin:0 0 .9em}.ptext h3{color:#D2AA6C;font-size:.55em;margin:1.6em 0 .6em}.ptext .ps{font-size:.45em;color:#A9C2B8;font-weight:400;margin:0 0 1em}
+@media print{.tools,.toc,.back,.pr,.topline{display:none!important}article{border:0;padding:0;font-size:14px}}
+</style></head><body>
+<div class="wrap">
+<div class="topline"></div>
+<a class="back" href="../">← 대본 보드</a>
+<div class="head"><span>뷰셀 · 1화</span><span>대본 완료</span></div>
+<h1>화장품으로 돈 버는 일곱 가지 길, 그리고 지금 열리는 하나</h1>
+<div class="meta"><span>음절 <b>2,485</b></span><span>예상 <b>8.3분</b></span><span>제공 2026-09-09 (수)</span><span>촬영 2026-09-11 (금)</span><span>공개 2026-09-16 (수)</span></div>
+<div class="tools"><button class="btn primary" id="tp">텔레프롬프터</button><button class="btn" onclick="window.print()">인쇄</button></div>
+<div class="toc"><a href="#t0-00"><b>0:00</b>훅</a>
+<a href="#t0-30"><b>0:30</b>문제 제기</a>
+<a href="#t1-30"><b>1:30</b>유니버스: 일곱 개의 경로</a>
+<a href="#t4-30"><b>4:30</b>재훅</a>
+<a href="#t5-00"><b>5:00</b>로드맵: 다섯 단계</a>
+<a href="#t8-30"><b>8:30</b>리스크</a>
+<a href="#t9-20"><b>9:20</b>결론</a></div>
+<article><div class="note">톤: 차갑게. 단정문. 감정어 없음. 숫자와 비교로만 긴장 유지.</div>
+<div class="note">표기: [ ] 안은 연출 메모. 읽지 않음.</div>
+<h2 id="t0-00"><span class="time">0:00</span>훅</h2>
+<div class="screen"><span>화면</span>검은 화면. 자막만. 인사 없음</div>
+<p>화장품으로 돈 버는 방법은 일곱 가지입니다.</p>
+<p>그중 여섯 가지는, 지금 시작하면 망합니다.</p>
+<p>이 영상 끝까지 보시면 남는 한 가지가 뭔지, 그리고 그걸 이번 주 안에 시작하는 순서까지 알게 됩니다.</p>
+<p>저는 뷰셀입니다. 5개월 동안 화장품 셀러 200명을 배출했습니다.</p>
+<p>감정은 빼고, 숫자로만 말하겠습니다.</p>
+<h2 id="t0-30"><span class="time">0:30</span>문제 제기</h2>
+<p>유튜브에 &quot;화장품 창업&quot;을 검색하면 결과는 세 가지로 요약됩니다.</p>
+<p>브랜드를 만들어라. 인플루언서가 돼라. 공장을 찾아라.</p>
+<p>틀린 말은 아닙니다. 문제는 순서입니다.</p>
+<p>브랜드 하나 만드는 데 얼마가 듭니까.</p>
+<p>제형 개발, 용기, 인증, 초도 물량.</p>
+<p>작게 잡아도 수천만 원입니다. 그리고 그 돈은 하나가 팔리기 전에 먼저 나갑니다.</p>
+<p>인플루언서. 팔로워가 있어야 합니다. 없으면 시작 자체가 안 됩니다.</p>
+<p>공장. 최소 주문 수량이 있습니다. 천 개, 삼천 개.</p>
+<p>팔릴지 모르는 물건을 창고에 쌓아놓고 시작하는 겁니다.</p>
+<p>대부분이 여기서 멈춥니다.</p>
+<p>방법을 몰라서가 아닙니다. 첫 단계의 벽이 너무 높아서입니다.</p>
+<p>그래서 판 전체를 먼저 보여드리겠습니다.</p>
+<h2 id="t1-30"><span class="time">1:30</span>유니버스: 일곱 개의 경로</h2>
+<div class="screen"><span>화면</span>가로축 &quot;자본&quot;, 세로축 &quot;첫 매출까지 시간&quot; 2축 좌표. 항목이 하나씩 찍힘</div>
+<p>화장품으로 돈이 흐르는 경로는 일곱 개입니다.</p>
+<p>두 개 축으로 놓겠습니다. 가로축, 필요한 자본. 세로축, 첫 매출까지 걸리는 시간.</p>
+<p><b>하나. 제조.</b></p>
+<p>OEM, ODM. 공장과 같이 제품을 만드는 겁니다.</p>
+<p>자본, 수천만에서 억 단위. 첫 매출까지 6개월 이상.</p>
+<p>마진은 가장 높습니다. 대신 재고 리스크를 전부 내가 집니다.</p>
+<p><b>둘. 브랜드 런칭.</b></p>
+<p>제조는 외주 주고 내 이름을 붙이는 겁니다.</p>
+<p>자본, 수천만. 기간, 3개월에서 6개월.</p>
+<p>만들고 나면 마케팅 비용이 또 붙습니다. 만드는 게 끝이 아니라 시작입니다.</p>
+<p><b>셋. 총판, 도매 유통.</b></p>
+<p>브랜드 물건을 대량으로 받아서 소매에 뿌립니다.</p>
+<p>자본, 수백만에서 수천만. 사입이라서 안 팔리면 그대로 손실입니다.</p>
+<p>대신 브랜드사와 관계가 생깁니다. 이건 나중에 다시 나옵니다.</p>
+<p><b>넷. 공동구매, 인플루언서.</b></p>
+<p>자본은 거의 안 듭니다. 대신 팔로워가 자본입니다.</p>
+<p>없으면 이 경로는 열리지 않습니다.</p>
+<p><b>다섯. 서비스.</b></p>
+<p>메이크업 샵, 뷰티 살롱.</p>
+<p>화장품을 파는 게 아니라, 화장품을 쓰는 기술을 팝니다.</p>
+<p>자본, 수천만. 임대료. 그리고 내 몸이 묶입니다.</p>
+<p><b>여섯. 수출, 역직구.</b></p>
+<p>K뷰티 수요는 확실히 있습니다.</p>
+<p>하지만 물류, 통관, 나라별 인증.</p>
+<p>혼자 시작하기엔 변수가 너무 많습니다.</p>
+<p><b>일곱. 리셀.</b></p>
+<p>이미 만들어진 브랜드 제품을 싸게 사서, 마진을 붙여 파는 겁니다.</p>
+<p>자본, 사실상 0. 첫 매출, 며칠.</p>
+<div class="screen"><span>화면</span>좌표에 일곱 번째 점만 원점 근처에 찍힘. 1초 정지</div>
+<p>여기서 대부분 이렇게 반응합니다.</p>
+<p>&quot;리셀? 그건 누구나 하는 거 아닌가요.&quot;</p>
+<p>맞습니다. 누구나 합니다. 그래서 대부분 망합니다.</p>
+<p>문제는 리셀이 아닙니다.</p>
+<p>어디서 사서, 어디에 파느냐입니다.</p>
+<h2 id="t4-30"><span class="time">4:30</span>재훅</h2>
+<p>일곱 가지 중에 오늘 당장, 자본 없이, 이번 주 안에 첫 주문이 나오는 건 일곱 번째 하나뿐입니다.</p>
+<p>단, 조건이 있습니다.</p>
+<p>남들이 파는 곳에 팔면 안 됩니다.</p>
+<p>지금부터 그 순서를 다섯 단계로 말씀드리겠습니다.</p>
+<h2 id="t5-00"><span class="time">5:00</span>로드맵: 다섯 단계</h2>
+<p><b>1단계. 소싱처를 고정한다.</b></p>
+<p>리셀 하는 사람들은 매번 &quot;어디가 싸지&quot;를 찾아다닙니다.</p>
+<p>그게 첫 번째 실패 원인입니다. 소싱처는 고정돼야 합니다.</p>
+<p>저는 네이버 플러스스토어를 씁니다. 정확히는 N배송 상품입니다.</p>
+<p>브랜드 정품이고, 배송은 네이버가 책임집니다.</p>
+<p>여기에 쿠폰과 적립 구조가 얹힙니다. 판매가 아래로 사는 구조가 나옵니다.</p>
+<p>정품을, 매번 같은 곳에서, 정가 이하로 삽니다.</p>
+<p>이게 &quot;고정&quot;입니다.</p>
+<p><b>2단계. 파는 곳을 바꾼다.</b></p>
+<p>여기서 갈립니다.</p>
+<p>대부분 쿠팡이나 스마트스토어에 올립니다. 소비자에게 직접 파는 채널입니다.</p>
+<p>그 채널에는 이미 브랜드 본사가 있고, 대형 셀러가 있고, 최저가 알고리즘이 있습니다.</p>
+<p>가격으로 싸워야 합니다. 가격으로 싸우면 마진은 0으로 갑니다.</p>
+<p>저는 도매꾹에 올립니다.</p>
+<p>소비자가 아니라, 셀러가 물건을 사 가는 도매 플랫폼입니다.</p>
+<p>왜 도매냐. 세 가지입니다.</p>
+<p>첫째, 도매 플랫폼에는 브랜드 정품이 드뭅니다. 희소합니다.</p>
+<p>둘째, 사 가는 사람이 셀러입니다. 그 셀러가 자기 채널에 다시 팝니다.</p>
+<p>내가 소비자를 찾을 필요가 없습니다. 유통이 알아서 퍼집니다.</p>
+<p>셋째, 소비자 최저가와 경쟁하지 않습니다.</p>
+<p>셀러가 받아들일 공급가만 맞추면 됩니다.</p>
+<p><b>3단계. 마진을 설계한다.</b></p>
+<p>수수료 빼고 얼마가 남느냐.</p>
+<p>이 계산을 안 하고 시작하는 사람이 대부분입니다.</p>
+<p>기준선은 15%입니다.</p>
+<p>10%로 시작하면 플랫폼 수수료 빼고 나면 사실상 0입니다.</p>
+<p>물량을 늘려도 0은 0입니다.</p>
+<p>그래서 15% 아래는 등록하지 않습니다.</p>
+<p>이건 취향이 아니라 규칙입니다.</p>
+<p><b>4단계. 배송 흐름을 만든다.</b></p>
+<p>주문이 들어오면 내가 물건을 만지지 않습니다.</p>
+<p>네이버에서 주문하면서 받는 주소에 최종 구매자를 넣습니다. 직송입니다.</p>
+<p>재고 없고, 창고 없고, 포장 없습니다.</p>
+<p>내가 하는 건 주문 전달 하나입니다.</p>
+<p><b>5단계. 반복을 자동화한다.</b></p>
+<p>소싱처가 고정돼 있으니까 반복이 가능합니다.</p>
+<p>반복이 가능하니까 자동화가 가능합니다.</p>
+<p>등록, 주문 전달, 재고 체크.</p>
+<p>이 세 가지가 손을 떠나야 두 번째, 세 번째 상품을 올릴 수 있습니다.</p>
+<p>단, 여기엔 조건이 있습니다. 바로 다음 얘깁니다.</p>
+<h2 id="t8-30"><span class="time">8:30</span>리스크</h2>
+<div class="screen"><span>화면</span>톤 더 낮게, 속도 늦춤</div>
+<p>좋은 얘기만 하면 이 영상은 광고입니다.</p>
+<p>망하는 지점을 말씀드리겠습니다.</p>
+<p><b>첫째, 플랫폼 정책입니다.</b></p>
+<p>상표 관련 서류, 이미지 저작권, 중복 등록, 그리고 승인되지 않은 자동화 툴.</p>
+<p>이걸 어기면 상품이 아니라 계정이 날아갑니다.</p>
+<p>자동화는 정책 안에서 해야 합니다. 밖에서 하면 빨라지는 게 아니라 끝납니다.</p>
+<p><b>둘째, 가격 경쟁력 규정입니다.</b></p>
+<p>도매 플랫폼도 가격을 봅니다.</p>
+<p>아무 상품이나 올리는 게 아니라, 소싱가가 실제로 낮아지는 상품만 올려야 합니다.</p>
+<p><b>셋째, 마진 착시입니다.</b></p>
+<p>쿠폰이 사라지면 마진도 사라집니다.</p>
+<p>쿠폰을 전제로 계산한 15%는 15%가 아닙니다.</p>
+<p>쿠폰 없는 가격으로 다시 계산해서, 그래도 살아남는 상품만 남깁니다.</p>
+<p>이 세 가지를 모르고 시작하면, 리셀도 일곱 번째가 아니라 여섯 번째와 같아집니다.</p>
+<h2 id="t9-20"><span class="time">9:20</span>결론</h2>
+<p>정리합니다.</p>
+<p>화장품으로 돈이 흐르는 길은 일곱 개고, 자본 없이 이번 주에 열리는 문은 하나입니다.</p>
+<p>리셀. 단, N배송에서 사서 도매꾹에 파는 리셀.</p>
+<p>그리고 이건 끝이 아니라 입구입니다.</p>
+<p>도매꾹에서 매출이 쌓이면 브랜드사가 먼저 연락합니다.</p>
+<p>그때 세 번째, 총판이 열립니다. 여섯 번째, 수출이 열립니다.</p>
+<p>순서만 바꾸면, 여섯 가지가 다시 살아납니다.</p>
+<p>다음 영상에서 실제 상품 하나를 잡고, 소싱가부터 공급가까지 계산을 그대로 보여드리겠습니다.</p>
+<p>지금 시작하실 분은 설명란 카페에서 시작 체크리스트를 받아가시면 됩니다.</p>
+<p>뷰셀이었습니다.</p>
+<div class="screen"><span>화면</span>컷. 엔딩 카드 없음</div></article>
+<footer>뷰셀 유튜브 · 대본 보드</footer>
+</div>
+<div class="pr" id="pr"><div class="pbar"><button id="pc">닫기</button><button id="pp">▶ / ❚❚</button><label>속도 <input id="sp" type="range" min="0" max="8" step=".5" value="2"></label><label>글자 <input id="sz" type="range" min="24" max="64" step="2" value="38"></label></div><div class="ptext" id="pt"><h3>0:00 · 훅</h3>
+<div class="ps">검은 화면. 자막만. 인사 없음</div>
+<p>화장품으로 돈 버는 방법은 일곱 가지입니다.</p>
+<p>그중 여섯 가지는, 지금 시작하면 망합니다.</p>
+<p>이 영상 끝까지 보시면 남는 한 가지가 뭔지, 그리고 그걸 이번 주 안에 시작하는 순서까지 알게 됩니다.</p>
+<p>저는 뷰셀입니다. 5개월 동안 화장품 셀러 200명을 배출했습니다.</p>
+<p>감정은 빼고, 숫자로만 말하겠습니다.</p>
+<h3>0:30 · 문제 제기</h3>
+<p>유튜브에 &quot;화장품 창업&quot;을 검색하면 결과는 세 가지로 요약됩니다.</p>
+<p>브랜드를 만들어라. 인플루언서가 돼라. 공장을 찾아라.</p>
+<p>틀린 말은 아닙니다. 문제는 순서입니다.</p>
+<p>브랜드 하나 만드는 데 얼마가 듭니까.</p>
+<p>제형 개발, 용기, 인증, 초도 물량.</p>
+<p>작게 잡아도 수천만 원입니다. 그리고 그 돈은 하나가 팔리기 전에 먼저 나갑니다.</p>
+<p>인플루언서. 팔로워가 있어야 합니다. 없으면 시작 자체가 안 됩니다.</p>
+<p>공장. 최소 주문 수량이 있습니다. 천 개, 삼천 개.</p>
+<p>팔릴지 모르는 물건을 창고에 쌓아놓고 시작하는 겁니다.</p>
+<p>대부분이 여기서 멈춥니다.</p>
+<p>방법을 몰라서가 아닙니다. 첫 단계의 벽이 너무 높아서입니다.</p>
+<p>그래서 판 전체를 먼저 보여드리겠습니다.</p>
+<h3>1:30 · 유니버스: 일곱 개의 경로</h3>
+<div class="ps">가로축 &quot;자본&quot;, 세로축 &quot;첫 매출까지 시간&quot; 2축 좌표. 항목이 하나씩 찍힘</div>
+<p>화장품으로 돈이 흐르는 경로는 일곱 개입니다.</p>
+<p>두 개 축으로 놓겠습니다. 가로축, 필요한 자본. 세로축, 첫 매출까지 걸리는 시간.</p>
+<p>**하나. 제조.**</p>
+<p>OEM, ODM. 공장과 같이 제품을 만드는 겁니다.</p>
+<p>자본, 수천만에서 억 단위. 첫 매출까지 6개월 이상.</p>
+<p>마진은 가장 높습니다. 대신 재고 리스크를 전부 내가 집니다.</p>
+<p>**둘. 브랜드 런칭.**</p>
+<p>제조는 외주 주고 내 이름을 붙이는 겁니다.</p>
+<p>자본, 수천만. 기간, 3개월에서 6개월.</p>
+<p>만들고 나면 마케팅 비용이 또 붙습니다. 만드는 게 끝이 아니라 시작입니다.</p>
+<p>**셋. 총판, 도매 유통.**</p>
+<p>브랜드 물건을 대량으로 받아서 소매에 뿌립니다.</p>
+<p>자본, 수백만에서 수천만. 사입이라서 안 팔리면 그대로 손실입니다.</p>
+<p>대신 브랜드사와 관계가 생깁니다. 이건 나중에 다시 나옵니다.</p>
+<p>**넷. 공동구매, 인플루언서.**</p>
+<p>자본은 거의 안 듭니다. 대신 팔로워가 자본입니다.</p>
+<p>없으면 이 경로는 열리지 않습니다.</p>
+<p>**다섯. 서비스.**</p>
+<p>메이크업 샵, 뷰티 살롱.</p>
+<p>화장품을 파는 게 아니라, 화장품을 쓰는 기술을 팝니다.</p>
+<p>자본, 수천만. 임대료. 그리고 내 몸이 묶입니다.</p>
+<p>**여섯. 수출, 역직구.**</p>
+<p>K뷰티 수요는 확실히 있습니다.</p>
+<p>하지만 물류, 통관, 나라별 인증.</p>
+<p>혼자 시작하기엔 변수가 너무 많습니다.</p>
+<p>**일곱. 리셀.**</p>
+<p>이미 만들어진 브랜드 제품을 싸게 사서, 마진을 붙여 파는 겁니다.</p>
+<p>자본, 사실상 0. 첫 매출, 며칠.</p>
+<div class="ps">좌표에 일곱 번째 점만 원점 근처에 찍힘. 1초 정지</div>
+<p>여기서 대부분 이렇게 반응합니다.</p>
+<p>&quot;리셀? 그건 누구나 하는 거 아닌가요.&quot;</p>
+<p>맞습니다. 누구나 합니다. 그래서 대부분 망합니다.</p>
+<p>문제는 리셀이 아닙니다.</p>
+<p>어디서 사서, 어디에 파느냐입니다.</p>
+<h3>4:30 · 재훅</h3>
+<p>일곱 가지 중에 오늘 당장, 자본 없이, 이번 주 안에 첫 주문이 나오는 건 일곱 번째 하나뿐입니다.</p>
+<p>단, 조건이 있습니다.</p>
+<p>남들이 파는 곳에 팔면 안 됩니다.</p>
+<p>지금부터 그 순서를 다섯 단계로 말씀드리겠습니다.</p>
+<h3>5:00 · 로드맵: 다섯 단계</h3>
+<p>**1단계. 소싱처를 고정한다.**</p>
+<p>리셀 하는 사람들은 매번 &quot;어디가 싸지&quot;를 찾아다닙니다.</p>
+<p>그게 첫 번째 실패 원인입니다. 소싱처는 고정돼야 합니다.</p>
+<p>저는 네이버 플러스스토어를 씁니다. 정확히는 N배송 상품입니다.</p>
+<p>브랜드 정품이고, 배송은 네이버가 책임집니다.</p>
+<p>여기에 쿠폰과 적립 구조가 얹힙니다. 판매가 아래로 사는 구조가 나옵니다.</p>
+<p>정품을, 매번 같은 곳에서, 정가 이하로 삽니다.</p>
+<p>이게 &quot;고정&quot;입니다.</p>
+<p>**2단계. 파는 곳을 바꾼다.**</p>
+<p>여기서 갈립니다.</p>
+<p>대부분 쿠팡이나 스마트스토어에 올립니다. 소비자에게 직접 파는 채널입니다.</p>
+<p>그 채널에는 이미 브랜드 본사가 있고, 대형 셀러가 있고, 최저가 알고리즘이 있습니다.</p>
+<p>가격으로 싸워야 합니다. 가격으로 싸우면 마진은 0으로 갑니다.</p>
+<p>저는 도매꾹에 올립니다.</p>
+<p>소비자가 아니라, 셀러가 물건을 사 가는 도매 플랫폼입니다.</p>
+<p>왜 도매냐. 세 가지입니다.</p>
+<p>첫째, 도매 플랫폼에는 브랜드 정품이 드뭅니다. 희소합니다.</p>
+<p>둘째, 사 가는 사람이 셀러입니다. 그 셀러가 자기 채널에 다시 팝니다.</p>
+<p>내가 소비자를 찾을 필요가 없습니다. 유통이 알아서 퍼집니다.</p>
+<p>셋째, 소비자 최저가와 경쟁하지 않습니다.</p>
+<p>셀러가 받아들일 공급가만 맞추면 됩니다.</p>
+<p>**3단계. 마진을 설계한다.**</p>
+<p>수수료 빼고 얼마가 남느냐.</p>
+<p>이 계산을 안 하고 시작하는 사람이 대부분입니다.</p>
+<p>기준선은 15%입니다.</p>
+<p>10%로 시작하면 플랫폼 수수료 빼고 나면 사실상 0입니다.</p>
+<p>물량을 늘려도 0은 0입니다.</p>
+<p>그래서 15% 아래는 등록하지 않습니다.</p>
+<p>이건 취향이 아니라 규칙입니다.</p>
+<p>**4단계. 배송 흐름을 만든다.**</p>
+<p>주문이 들어오면 내가 물건을 만지지 않습니다.</p>
+<p>네이버에서 주문하면서 받는 주소에 최종 구매자를 넣습니다. 직송입니다.</p>
+<p>재고 없고, 창고 없고, 포장 없습니다.</p>
+<p>내가 하는 건 주문 전달 하나입니다.</p>
+<p>**5단계. 반복을 자동화한다.**</p>
+<p>소싱처가 고정돼 있으니까 반복이 가능합니다.</p>
+<p>반복이 가능하니까 자동화가 가능합니다.</p>
+<p>등록, 주문 전달, 재고 체크.</p>
+<p>이 세 가지가 손을 떠나야 두 번째, 세 번째 상품을 올릴 수 있습니다.</p>
+<p>단, 여기엔 조건이 있습니다. 바로 다음 얘깁니다.</p>
+<h3>8:30 · 리스크</h3>
+<div class="ps">톤 더 낮게, 속도 늦춤</div>
+<p>좋은 얘기만 하면 이 영상은 광고입니다.</p>
+<p>망하는 지점을 말씀드리겠습니다.</p>
+<p>**첫째, 플랫폼 정책입니다.**</p>
+<p>상표 관련 서류, 이미지 저작권, 중복 등록, 그리고 승인되지 않은 자동화 툴.</p>
+<p>이걸 어기면 상품이 아니라 계정이 날아갑니다.</p>
+<p>자동화는 정책 안에서 해야 합니다. 밖에서 하면 빨라지는 게 아니라 끝납니다.</p>
+<p>**둘째, 가격 경쟁력 규정입니다.**</p>
+<p>도매 플랫폼도 가격을 봅니다.</p>
+<p>아무 상품이나 올리는 게 아니라, 소싱가가 실제로 낮아지는 상품만 올려야 합니다.</p>
+<p>**셋째, 마진 착시입니다.**</p>
+<p>쿠폰이 사라지면 마진도 사라집니다.</p>
+<p>쿠폰을 전제로 계산한 15%는 15%가 아닙니다.</p>
+<p>쿠폰 없는 가격으로 다시 계산해서, 그래도 살아남는 상품만 남깁니다.</p>
+<p>이 세 가지를 모르고 시작하면, 리셀도 일곱 번째가 아니라 여섯 번째와 같아집니다.</p>
+<h3>9:20 · 결론</h3>
+<p>정리합니다.</p>
+<p>화장품으로 돈이 흐르는 길은 일곱 개고, 자본 없이 이번 주에 열리는 문은 하나입니다.</p>
+<p>리셀. 단, N배송에서 사서 도매꾹에 파는 리셀.</p>
+<p>그리고 이건 끝이 아니라 입구입니다.</p>
+<p>도매꾹에서 매출이 쌓이면 브랜드사가 먼저 연락합니다.</p>
+<p>그때 세 번째, 총판이 열립니다. 여섯 번째, 수출이 열립니다.</p>
+<p>순서만 바꾸면, 여섯 가지가 다시 살아납니다.</p>
+<p>다음 영상에서 실제 상품 하나를 잡고, 소싱가부터 공급가까지 계산을 그대로 보여드리겠습니다.</p>
+<p>지금 시작하실 분은 설명란 카페에서 시작 체크리스트를 받아가시면 됩니다.</p>
+<p>뷰셀이었습니다.</p>
+<div class="ps">컷. 엔딩 카드 없음</div></div></div>
+<script>
+const P=document.getElementById('pr'),T=document.getElementById('pt');let sp=2,run=false,raf;
+const tick=()=>{if(run)T.scrollTop+=sp/2;raf=requestAnimationFrame(tick)};
+document.getElementById('tp').onclick=()=>{P.classList.add('on');T.scrollTop=0;run=false;cancelAnimationFrame(raf);tick()};
+document.getElementById('pc').onclick=()=>{P.classList.remove('on');run=false;cancelAnimationFrame(raf)};
+document.getElementById('pp').onclick=()=>run=!run;
+document.getElementById('sp').oninput=e=>sp=+e.target.value;
+document.getElementById('sz').oninput=e=>T.style.fontSize=e.target.value+'px';
+document.addEventListener('keydown',e=>{if(!P.classList.contains('on'))return;
+ if(e.code==='Space'){e.preventDefault();run=!run}
+ if(e.code==='ArrowUp'){sp=Math.min(8,sp+.5);document.getElementById('sp').value=sp}
+ if(e.code==='ArrowDown'){sp=Math.max(0,sp-.5);document.getElementById('sp').value=sp}
+ if(e.code==='Escape')document.getElementById('pc').click()});
+</script>
+</body></html>

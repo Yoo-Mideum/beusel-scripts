@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 300" font-family="Noto Sans KR, Apple SD Gothic Neo, sans-serif">
+<rect width="900" height="300" fill="#0F172A"/>
+<text x="30" y="36" fill="#FDE68A" font-size="16">돈이 된 성분 5개 — 출처는 전부 같다 (병원 → 약국 → 매대)</text>
+<line x1="60" y1="250" x2="860" y2="250" stroke="#334155" stroke-width="1"/>
+<g fill="#F59E0B">
+<rect x="80" y="150" width="90" height="100" rx="6" opacity=".35"/><rect x="200" y="110" width="90" height="140" rx="6" opacity=".5"/><rect x="320" y="125" width="90" height="125" rx="6" opacity=".6"/><rect x="440" y="115" width="90" height="135" rx="6" opacity=".7"/><rect x="560" y="75" width="90" height="175" rx="6" opacity=".85"/><rect x="680" y="55" width="90" height="195" rx="6"/>
+</g>
+<g fill="#E2E8F0" font-size="13" text-anchor="middle">
+<text x="125" y="140">달팽이</text><text x="245" y="100">시카</text><text x="365" y="115">어성초·레티놀</text><text x="485" y="105">쌀</text><text x="605" y="65">PDRN</text><text x="725" y="45">롱제비티·HOCl</text>
+</g>
+<g fill="#FDE68A" font-size="11" text-anchor="middle">
+<text x="125" y="122">아모레·메디힐</text><text x="245" y="82">닥터자르트</text><text x="365" y="97">아누아·라운드랩</text><text x="485" y="87">조선미녀·코스알엑스</text><text x="605" y="47">메디큐브·티르티르</text><text x="725" y="27">수출 114억$</text>
+</g>
+<g fill="#94A3B8" font-size="12" text-anchor="middle">
+<text x="125" y="272">2016</text><text x="245" y="272">2017–19</text><text x="365" y="272">2020–21</text><text x="485" y="272">2022</text><text x="605" y="272">2023–24</text><text x="725" y="272">2025–26</text>
+</g>
+<text x="30" y="292" fill="#64748B" font-size="10">막대 높이 = 그 시기 성분이 매대까지 내려온 정도(개념도). 수치 출처는 대본 하단.</text>
+</svg>
