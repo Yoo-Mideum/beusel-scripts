@@ -261,7 +261,7 @@ def card(e, plan=False):
     cls = ' plan' if plan else ''
     return (f'<div class="card{cls}" data-ep="{n}" data-video="{video}">'
             f'<div class="chips">{chips}</div><div class="t">{html.escape(e["title"])}</div>{hook}{dates}'
-            f'<div class="btns">{open_btn}<a class="btn" href="https://github.com/Yoo-Mideum/beusel-scripts/issues/new?title={quote(f"[{n}화 업로드 링크] {e["title"]}")}&body={ISSUE_BODY}&labels=upload-link" target="_blank" rel="noopener">영상 링크 등록</a></div>'
+            f'<div class="btns">{open_btn}<a class="btn" href="https://github.com/Yoo-Mideum/beusel-scripts/issues/new?title={quote("[" + str(n) + "화 업로드 링크] " + e["title"])}&body={ISSUE_BODY}&labels=upload-link" target="_blank" rel="noopener">영상 링크 등록</a></div>'
             f'<div class="vlink"></div>{memo}</div>')
 
 todo = [e for e in D['episodes'] if e['status'] in ('대본 작성 중','대본 완료','촬영 완료')]

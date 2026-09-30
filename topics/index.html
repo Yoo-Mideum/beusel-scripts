@@ -1,0 +1,222 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>뷰셀 · 이후 대본 주제</title><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet"><style>
+:root{
+  --g1:#E9D9B3;--g2:#D9B97E;--g3:#C99A5E;--g4:#B57F55;
+  --grad:linear-gradient(90deg,var(--g1),var(--g2),var(--g3),var(--g4));
+  --bg:#FAF8F4;--card:#FFFFFF;--tile:#F3F0EA;--ink:#22201C;--mut:#7A7368;--line:#E8E3DA;
+  --acc:#B98A4A;--acc-ink:#8C6224;--acc-soft:#F3E7CC;--sec:#5E7466;--sec-soft:#E5EDE7;
+  --screen-bg:#EEF1F0;--screen-ink:#4E6660;--quote-bg:#F7F1E4;--quote-ink:#6E5326
+}
+@media(prefers-color-scheme:dark){:root{
+  --bg:#121110;--card:#1A1816;--tile:#242120;--ink:#EDE7DB;--mut:#8F877B;--line:#2B2724;
+  --acc:#D2AA6C;--acc-ink:#E3C48E;--acc-soft:#3B3020;--sec:#9BB5A4;--sec-soft:#22302A;
+  --screen-bg:#1F2422;--screen-ink:#A9C2B8;--quote-bg:#26211A;--quote-ink:#D8BE8E
+}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'Gowun Dodum','Noto Sans KR',system-ui,sans-serif;line-height:1.7;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+.wrap{max-width:600px;margin:0 auto;padding:26px 18px 80px}
+.topline{height:2px;background:var(--grad);opacity:.8;border-radius:999px;margin-bottom:22px}
+.head{display:flex;justify-content:space-between;font-size:12.5px;color:var(--mut);letter-spacing:.04em}
+h1{font-size:27px;margin:8px 0 8px;line-height:1.3;color:var(--ink);font-weight:400}
+.sub{font-size:14px;color:var(--mut);margin:0 0 24px}
+.sub b{color:var(--ink);font-weight:400}
+h2{font-size:17px;margin:30px 0 10px;font-weight:400}
+.card{display:block;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:20px 18px 18px;margin:0 0 16px}
+.chips{display:flex;gap:8px;align-items:center;margin-bottom:10px}
+.badge{display:inline-block;padding:3px 12px;border-radius:999px;font-size:12px}
+.s0{background:var(--tile);color:var(--mut)}
+.s1{background:var(--acc-soft);color:var(--acc-ink)}
+.s2{background:var(--acc);color:#1A1612}
+.s3{background:var(--g4);color:#fff}
+.s4{background:var(--ink);color:var(--bg)}
+.n{display:inline-block;padding:3px 10px;border-radius:999px;font-size:12px;background:var(--tile);color:var(--mut)}
+.card .t{font-size:19px;line-height:1.45;color:var(--acc-ink);margin:0 0 8px}
+.card .hook{font-size:14px;color:var(--mut);margin:0 0 14px;line-height:1.6}
+.dates{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:14px}
+.tile{background:var(--tile);border-radius:12px;padding:10px 12px}
+.tile .k{font-size:11.5px;color:var(--mut)} .tile .v{font-size:14.5px;font-variant-numeric:tabular-nums;margin-top:2px}
+.tile .w{font-size:11px;color:var(--mut)}
+.btns{display:flex;gap:8px;flex-wrap:wrap}
+.btn{display:inline-block;padding:9px 16px;border-radius:999px;border:1px solid var(--acc);color:var(--acc-ink);font-size:14px;text-decoration:none;background:transparent;font-family:inherit;cursor:pointer}
+.btn.primary{background:var(--acc);border-color:var(--acc);color:#1A1612}
+.btn:disabled{opacity:.4;cursor:default}
+.vlink{font-size:13px;color:var(--mut);margin-top:10px;word-break:break-all}
+.vlink a{color:var(--acc-ink)}
+.memo{font-size:12.5px;color:var(--mut);margin-top:10px}
+.hero{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:16px 18px;margin-bottom:18px;display:flex;gap:16px;align-items:center}
+.hero .big{font-size:30px;color:var(--acc-ink);white-space:nowrap;font-variant-numeric:tabular-nums}
+.hero .s{font-size:13.5px;color:var(--mut);line-height:1.5} .hero .s b{font-weight:400;color:var(--ink)}
+.guide{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px 16px 14px 32px;font-size:14px;margin:0}
+.guide li{margin:6px 0} .guide b{font-weight:400;color:var(--acc-ink)}
+code{background:var(--tile);padding:1px 6px;border-radius:6px;font-size:12.5px}
+footer{text-align:center;color:var(--mut);font-size:12px;margin-top:36px}
+.sec-h{display:flex;align-items:center;gap:10px;margin:28px 0 12px;font-size:13px;color:var(--mut);letter-spacing:.06em}
+.sec-h:after{content:"";flex:1;height:1px;background:var(--line)}
+.sec-h b{font-weight:400;color:var(--ink);font-size:15px}
+.s1{background:var(--acc-soft);color:var(--acc-ink)}
+.s0{background:var(--sec-soft);color:var(--sec)}
+.card.plan{border-style:dashed;background:transparent}
+.card.plan .t{color:var(--ink)}
+details.done{border:1px solid var(--line);border-radius:18px;background:var(--card);margin-top:8px}
+details.done summary{list-style:none;cursor:pointer;padding:16px 18px;display:flex;justify-content:space-between;align-items:center;font-size:15px}
+details.done summary::-webkit-details-marker{display:none}
+details.done summary .cnt{font-size:12px;color:var(--mut)}
+details.done summary:after{content:"＋";color:var(--mut);margin-left:10px}
+details.done[open] summary:after{content:"－"}
+.done-list{list-style:none;margin:0;padding:0 18px 10px;border-top:1px solid var(--line)}
+.done-list li{display:flex;gap:12px;align-items:baseline;padding:10px 0;border-bottom:1px solid var(--line);font-size:14px}
+.done-list li:last-child{border-bottom:0}
+.done-list .n{flex:0 0 auto}
+.done-list a{text-decoration:none;flex:1}
+.done-list .d{font-size:12px;color:var(--mut);white-space:nowrap}
+.gbox{border:1.5px solid var(--acc);border-radius:18px;padding:18px 18px 14px;margin-top:8px;position:relative}
+.gbox .gt{position:absolute;top:-11px;left:16px;background:var(--bg);padding:0 8px;font-size:12.5px;color:var(--acc-ink);letter-spacing:.06em}
+.gbox ul{margin:0;padding:0 0 0 18px;font-size:14px}
+.gbox li{margin:7px 0} .gbox li b{font-weight:400;color:var(--acc-ink)}
+.gbox .tlink{display:inline-block;margin-top:10px;font-size:13.5px;color:var(--acc-ink);text-decoration:none;border-bottom:1px solid var(--acc)}
+.back{font-size:13px;color:var(--mut);text-decoration:none;display:inline-block;margin-bottom:10px}
+.meta{display:flex;gap:12px;flex-wrap:wrap;font-size:13px;color:var(--mut);margin:6px 0 14px} .meta b{color:var(--ink);font-weight:400}
+.tools{display:flex;gap:8px;margin-bottom:18px}
+.tools .btn{flex:1;text-align:center}
+.toc{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:18px}
+.toc a{font-size:12.5px;text-decoration:none;color:var(--mut);background:var(--card);border:1px solid var(--line);border-radius:999px;padding:4px 10px}
+.toc a b{color:var(--acc-ink);margin-right:4px;font-variant-numeric:tabular-nums;font-weight:400}
+article{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px 20px;font-size:16.5px;line-height:1.9}
+article h2{font-size:18px;margin:34px 0 12px;padding-top:18px;border-top:1px solid var(--line);scroll-margin-top:14px}
+article h2:first-child{border-top:0;margin-top:0;padding-top:0}
+.time{display:inline-block;background:var(--acc-soft);color:var(--acc-ink);font-size:11.5px;padding:1px 8px;border-radius:6px;margin-right:8px;vertical-align:middle;font-variant-numeric:tabular-nums}
+article p{margin:0 0 13px}
+.note{margin:0 0 18px;padding:9px 14px;border-left:2px solid var(--acc);background:var(--quote-bg);color:var(--quote-ink);font-size:13.5px;border-radius:0 10px 10px 0}
+.screen{display:flex;gap:9px;align-items:flex-start;background:var(--screen-bg);color:var(--screen-ink);border-radius:10px;padding:8px 12px;font-size:13.5px;margin:4px 0 16px;line-height:1.5}
+.screen span{flex:0 0 auto;border:1px solid var(--screen-ink);color:var(--screen-ink);font-size:10.5px;padding:0 6px;border-radius:5px;margin-top:3px}
+mark{background:var(--acc-soft);color:var(--ink);padding:0 4px;border-radius:4px}
+figure{margin:6px 0 20px} figure img{width:100%;border-radius:12px;display:block} figcaption{font-size:12px;color:var(--mut);margin-top:6px;text-align:center}
+.src{font-size:12px;color:var(--mut);margin-top:22px;padding-top:12px;border-top:1px dashed var(--line)} .src a{word-break:break-all;color:var(--acc-ink)}
+.pr{position:fixed;inset:0;background:#000;color:#fff;z-index:50;display:none;flex-direction:column}
+.pr.on{display:flex}
+.pbar{display:flex;gap:12px;align-items:center;padding:10px 14px;background:#111;font-size:12.5px;color:#aaa;flex-wrap:wrap}
+.pbar button{background:#333;color:#fff;border:0;padding:7px 12px;border-radius:8px;font-family:inherit}
+.pbar input{width:90px;vertical-align:middle}
+.ptext{flex:1;overflow:auto;padding:40vh 7% 60vh;font-size:38px;line-height:1.7;font-weight:600}
+.ptext p{margin:0 0 .9em}.ptext h3{color:#D2AA6C;font-size:.55em;margin:1.6em 0 .6em}.ptext .ps{font-size:.45em;color:#A9C2B8;font-weight:400;margin:0 0 1em}
+@media print{.tools,.toc,.back,.pr,.topline{display:none!important}article{border:0;padding:0;font-size:14px}}
+</style></head><body>
+<div class="wrap">
+<div class="topline"></div>
+<a class="back" href="../">← 대본 보드</a>
+<div class="head"><span>뷰셀 유튜브</span><span>이후 대본 주제 후보</span></div>
+<h1>이후 대본 주제 후보</h1>
+<p class="sub">강의 연결 없이 &#x27;공부하게 만드는&#x27; 회차 후보. 각 항목은 훅 한 줄 + 시청자가 영상 끝나고 스스로 찾아보게 되는 질문 하나. 시리즈 태그로 묶음.</p>
+<h2>구조 — 화장품 업계가 돌아가는 판을 읽게 만드는 회차</h2><div class="card">
+<div class="chips"><span class="n">7화 후보</span></div>
+<div class="t">화장품 유통 4단계 — 브랜드사·총판·도매·소매, 돈은 어디서 멈추나</div>
+<p class="hook">“정가 2만 원 제품, 브랜드사가 가져가는 건 확인 필요.”</p>
+<div class="memo">공부 유도 → 내가 파는 위치가 4단계 중 어디인지 그려본다<br>후보</div>
+</div><div class="card">
+<div class="chips"><span class="n">8화 후보</span></div>
+<div class="t">N배송은 왜 싸게 살 수 있는가 — 쿠폰·적립·배송 구조 해부</div>
+<p class="hook">“네이버가 손해 보고 파는 게 아닙니다. 누가 내는지 아십니까.”</p>
+<div class="memo">공부 유도 → 오늘 쿠폰 적용가와 정가 차이를 표로 만든다<br>후보</div>
+</div><div class="card">
+<div class="chips"><span class="n">9화 후보</span></div>
+<div class="t">도매 플랫폼에는 왜 브랜드 정품이 드문가 — 희소성이 생기는 이유</div>
+<p class="hook">“도매꾹 화장품 카테고리, 정품 브랜드 비율은 확인 필요.”</p>
+<div class="memo">공부 유도 → 도매꾹 화장품 상위 50개 중 브랜드 정품이 몇 개인지 세본다<br>후보</div>
+</div><div class="card">
+<div class="chips"><span class="n">14화 후보</span></div>
+<div class="t">올리브영에 입점한다는 것 — 수수료·재고·행사 구조</div>
+<p class="hook">“올리브영 매대는 목표가 아니라 3단계입니다.”</p>
+<div class="memo">공부 유도 → 올리브영 입점 브랜드 하나의 온라인 가격과 도매가를 비교한다<br>후보 · 수수료율 확인 필요</div>
+</div><div class="card">
+<div class="chips"><span class="n">18화 후보</span></div>
+<div class="t">화장품 제조 원가 — OEM 견적서에는 뭐가 들어있나</div>
+<p class="hook">“2만 원 크림의 제조 원가는 확인 필요. 나머지는 어디로 갑니까.”</p>
+<div class="memo">공부 유도 → 한국콜마·코스맥스 IR 자료에서 매출원가율을 찾아본다<br>후보 · 원가 수치 확인 필요</div>
+</div><div class="card">
+<div class="chips"><span class="n">22화 후보</span></div>
+<div class="t">일본·미국·동남아 — K뷰티가 나라마다 다르게 팔리는 이유</div>
+<p class="hook">“같은 제품이 일본에서는 드럭스토어, 미국에서는 아마존입니다.”</p>
+<div class="memo">공부 유도 → 큐텐재팬·쇼피·아마존에서 같은 브랜드 가격을 비교한다<br>후보</div>
+</div><h2>숫자 — 마진·수수료·수출액 등 계산을 직접 해보게 만드는 회차</h2><div class="card">
+<div class="chips"><span class="n">4화 후보</span></div>
+<div class="t">상품 하나로 소싱가→공급가 계산 그대로 보여주기</div>
+<p class="hook">“이 제품, 15% 남는다고 생각하십니까. 계산하면 3%입니다.”</p>
+<div class="memo">공부 유도 → 내 후보 상품 하나를 같은 표로 계산해본다<br>후보</div>
+</div><div class="card">
+<div class="chips"><span class="n">6화 후보</span></div>
+<div class="t">15% 마진 아래 상품을 걸러내는 체크리스트 7개</div>
+<p class="hook">“쿠폰이 사라지는 순간 마진도 사라집니다.”</p>
+<div class="memo">공부 유도 → 쿠폰 없는 가격으로 내 상품을 다시 계산한다<br>후보</div>
+</div><div class="card">
+<div class="chips"><span class="n">12화 후보</span></div>
+<div class="t">K뷰티 수출 114억 달러 — 그 돈은 어느 나라, 어느 카테고리로 갔나</div>
+<p class="hook">“미국이 중국을 제쳤습니다. 2년 전엔 상상 못 한 순서입니다.”</p>
+<div class="memo">공부 유도 → 식약처 수출 통계에서 국가별 비중을 직접 본다<br>후보</div>
+</div><div class="card">
+<div class="chips"><span class="n">16화 후보</span></div>
+<div class="t">성분 하나가 뜨면 얼마나 오래 가나 — 시카·PDRN 검색량으로 본 유행 수명</div>
+<p class="hook">“시카는 6년, 어성초는 2년. 다음 성분은 몇 년일까요.”</p>
+<div class="memo">공부 유도 → 네이버 데이터랩에서 성분 키워드 검색량을 직접 뽑아본다<br>후보</div>
+</div><div class="card">
+<div class="chips"><span class="n">20화 후보</span></div>
+<div class="t">월 100만 원 순이익까지 필요한 상품 수 — 마진율별 역산</div>
+<p class="hook">“15% 마진이면 상품 몇 개가 필요한지 계산해본 적 있습니까.”</p>
+<div class="memo">공부 유도 → 내 목표 순이익을 마진율로 나눠 필요한 매출을 역산한다<br>후보</div>
+</div><div class="card">
+<div class="chips"><span class="n">24화 후보</span></div>
+<div class="t">플랫폼 수수료 비교 — 도매꾹·쿠팡·스마트스토어·올리브영 온라인</div>
+<p class="hook">“같은 15% 마진이 채널에 따라 2%가 되기도, 12%가 되기도 합니다.”</p>
+<div class="memo">공부 유도 → 각 플랫폼 판매자 페이지에서 수수료율을 직접 확인한다<br>후보 · 수수료율 확인 필요</div>
+</div><h2>사례 — 브랜드·사람의 실제 이야기로 &#x27;나도 찾아봐야겠다&#x27;를 만드는 회차</h2><div class="card">
+<div class="chips"><span class="n">3화 후보</span><span class="badge s1">다음 회차</span></div>
+<div class="t">10년 안에 매출 열 배 뛴 브랜드·제품 — 언제, 무엇 때문에 터졌나</div>
+<p class="hook">“조선미녀는 2022년 이전엔 국내에서 아무도 몰랐습니다.”</p>
+<div class="memo">공부 유도 → 내가 아는 브랜드의 &#x27;터진 시점&#x27;을 하나 찾아본다<br>3화 확정</div>
+</div><div class="card">
+<div class="chips"><span class="n">10화 후보</span></div>
+<div class="t">쿠팡에서 화장품 팔다 망한 세 가지 패턴</div>
+<p class="hook">“셋 다 열심히 했습니다. 셋 다 채널이 틀렸습니다.”</p>
+<div class="memo">공부 유도 → 내 판매 채널이 세 패턴 중 어디에 해당하는지 확인한다<br>후보</div>
+</div><div class="card">
+<div class="chips"><span class="n">13화 후보</span></div>
+<div class="t">인디 브랜드가 대기업에 팔리기까지 — 3CE·닥터자르트·코스알엑스 타임라인</div>
+<p class="hook">“세 브랜드의 공통점은 창업 5년 안에 해외에서 먼저 터졌다는 것입니다.”</p>
+<div class="memo">공부 유도 → 인수된 브랜드 하나를 골라 매출 성장 곡선을 찾아본다<br>후보 · 매출 수치 확인 필요</div>
+</div><div class="card">
+<div class="chips"><span class="n">17화 후보</span></div>
+<div class="t">틱톡에서 터진 K뷰티 5개 — 티르티르·조선미녀·미샤, 공통 트리거</div>
+<p class="hook">“다섯 개 전부 한국이 아니라 미국 크리에이터가 먼저 올렸습니다.”</p>
+<div class="memo">공부 유도 → 틱톡에서 #kbeauty 상위 영상의 제품을 리스트업한다<br>후보</div>
+</div><div class="card">
+<div class="chips"><span class="n">21화 후보</span></div>
+<div class="t">화장품 셀러 200명 중 살아남은 사람의 공통점 세 가지</div>
+<p class="hook">“잘 파는 사람이 아니라, 잘 고르는 사람이 남았습니다.”</p>
+<div class="memo">공부 유도 → 내가 지금 하는 일이 &#x27;팔기&#x27;인지 &#x27;고르기&#x27;인지 구분한다<br>후보 · 뷰셀 실데이터 필요</div>
+</div><h2>리스크 — &#x27;이건 모르면 망한다&#x27;로 공부 동기를 만드는 회차</h2><div class="card">
+<div class="chips"><span class="n">5화 후보</span></div>
+<div class="t">도매꾹 정책 3가지 — 상표·이미지·자동화, 계정이 날아가는 순서</div>
+<p class="hook">“상품이 아니라 계정이 삭제됩니다. 세 가지 중 하나만 어겨도.”</p>
+<div class="memo">공부 유도 → 도매꾹 판매자 약관에서 &#x27;금지&#x27; 항목을 직접 읽는다<br>후보</div>
+</div><div class="card">
+<div class="chips"><span class="n">11화 후보</span></div>
+<div class="t">화장품법이 셀러에게 요구하는 것 — 책임판매업자·표시·광고 표현</div>
+<p class="hook">“&#x27;미백&#x27;이라고 쓰면 과태료입니다. 기능성 인증 없이는.”</p>
+<div class="memo">공부 유도 → 식약처 화장품 표시·광고 가이드라인에서 금지 표현 10개를 찾는다<br>후보 · 법령 확인 필요</div>
+</div><div class="card">
+<div class="chips"><span class="n">15화 후보</span></div>
+<div class="t">가품·병행수입·그레이마켓 — 셀러가 모르고 넘는 선</div>
+<p class="hook">“정품인데 불법인 경우가 있습니다.”</p>
+<div class="memo">공부 유도 → 내 소싱처가 공식 유통 경로인지 확인하는 방법을 찾는다<br>후보 · 법령 확인 필요</div>
+</div><div class="card">
+<div class="chips"><span class="n">19화 후보</span></div>
+<div class="t">재고 없는 리셀의 함정 — 품절·가격 변동·배송 지연을 누가 책임지나</div>
+<p class="hook">“재고가 없다는 건 리스크가 없다는 뜻이 아닙니다.”</p>
+<div class="memo">공부 유도 → 내 판매 상품의 소싱처 품절 빈도를 일주일 기록한다<br>후보</div>
+</div><div class="card">
+<div class="chips"><span class="n">23화 후보</span></div>
+<div class="t">브랜드사가 셀러에게 먼저 연락하는 순간 — 위탁 제안 계약서에서 봐야 할 것</div>
+<p class="hook">“제안이 오면 좋은 일입니다. 계약서를 안 읽으면 나쁜 일이 됩니다.”</p>
+<div class="memo">공부 유도 → 위수탁 계약서 표준 양식에서 반품·정산 조항을 찾아본다<br>후보</div>
+</div>
+<footer>뷰셀 유튜브 · 대본 보드</footer>
+</div></body></html>
