@@ -1,0 +1,300 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>3화 · 10년 안에 매출 열 배 뛴 브랜드·제품 — 언제, 무엇 때문에 터졌나</title><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet"><style>
+:root{
+  --g1:#E9D9B3;--g2:#D9B97E;--g3:#C99A5E;--g4:#B57F55;
+  --grad:linear-gradient(90deg,var(--g1),var(--g2),var(--g3),var(--g4));
+  --bg:#FAF8F4;--card:#FFFFFF;--tile:#F3F0EA;--ink:#22201C;--mut:#7A7368;--line:#E8E3DA;
+  --acc:#B98A4A;--acc-ink:#8C6224;--acc-soft:#F3E7CC;--sec:#5E7466;--sec-soft:#E5EDE7;
+  --screen-bg:#EEF1F0;--screen-ink:#4E6660;--quote-bg:#F7F1E4;--quote-ink:#6E5326
+}
+@media(prefers-color-scheme:dark){:root{
+  --bg:#121110;--card:#1A1816;--tile:#242120;--ink:#EDE7DB;--mut:#8F877B;--line:#2B2724;
+  --acc:#D2AA6C;--acc-ink:#E3C48E;--acc-soft:#3B3020;--sec:#9BB5A4;--sec-soft:#22302A;
+  --screen-bg:#1F2422;--screen-ink:#A9C2B8;--quote-bg:#26211A;--quote-ink:#D8BE8E
+}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'Gowun Dodum','Noto Sans KR',system-ui,sans-serif;line-height:1.7;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+.wrap{max-width:600px;margin:0 auto;padding:26px 18px 80px}
+.topline{height:2px;background:var(--grad);opacity:.8;border-radius:999px;margin-bottom:22px}
+.head{display:flex;justify-content:space-between;font-size:12.5px;color:var(--mut);letter-spacing:.04em}
+h1{font-size:27px;margin:8px 0 8px;line-height:1.3;color:var(--ink);font-weight:400}
+.sub{font-size:14px;color:var(--mut);margin:0 0 24px}
+.sub b{color:var(--ink);font-weight:400}
+h2{font-size:17px;margin:30px 0 10px;font-weight:400}
+.card{display:block;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:20px 18px 18px;margin:0 0 16px}
+.chips{display:flex;gap:8px;align-items:center;margin-bottom:10px}
+.badge{display:inline-block;padding:3px 12px;border-radius:999px;font-size:12px}
+.s0{background:var(--tile);color:var(--mut)}
+.s1{background:var(--acc-soft);color:var(--acc-ink)}
+.s2{background:var(--acc);color:#1A1612}
+.s3{background:var(--g4);color:#fff}
+.s4{background:var(--ink);color:var(--bg)}
+.n{display:inline-block;padding:3px 10px;border-radius:999px;font-size:12px;background:var(--tile);color:var(--mut)}
+.card .t{font-size:19px;line-height:1.45;color:var(--acc-ink);margin:0 0 8px}
+.card .hook{font-size:14px;color:var(--mut);margin:0 0 14px;line-height:1.6}
+.dates{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:14px}
+.tile{background:var(--tile);border-radius:12px;padding:10px 12px}
+.tile .k{font-size:11.5px;color:var(--mut)} .tile .v{font-size:14.5px;font-variant-numeric:tabular-nums;margin-top:2px}
+.tile .w{font-size:11px;color:var(--mut)}
+.btns{display:flex;gap:8px;flex-wrap:wrap}
+.btn{display:inline-block;padding:9px 16px;border-radius:999px;border:1px solid var(--acc);color:var(--acc-ink);font-size:14px;text-decoration:none;background:transparent;font-family:inherit;cursor:pointer}
+.btn.primary{background:var(--acc);border-color:var(--acc);color:#1A1612}
+.btn:disabled{opacity:.4;cursor:default}
+.vlink{font-size:13px;color:var(--mut);margin-top:10px;word-break:break-all}
+.vlink a{color:var(--acc-ink)}
+.memo{font-size:12.5px;color:var(--mut);margin-top:10px}
+.hero{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:16px 18px;margin-bottom:18px;display:flex;gap:16px;align-items:center}
+.hero .big{font-size:30px;color:var(--acc-ink);white-space:nowrap;font-variant-numeric:tabular-nums}
+.hero .s{font-size:13.5px;color:var(--mut);line-height:1.5} .hero .s b{font-weight:400;color:var(--ink)}
+.guide{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px 16px 14px 32px;font-size:14px;margin:0}
+.guide li{margin:6px 0} .guide b{font-weight:400;color:var(--acc-ink)}
+code{background:var(--tile);padding:1px 6px;border-radius:6px;font-size:12.5px}
+footer{text-align:center;color:var(--mut);font-size:12px;margin-top:36px}
+.sec-h{display:flex;align-items:center;gap:10px;margin:28px 0 12px;font-size:13px;color:var(--mut);letter-spacing:.06em}
+.sec-h:after{content:"";flex:1;height:1px;background:var(--line)}
+.sec-h b{font-weight:400;color:var(--ink);font-size:15px}
+.s1{background:var(--acc-soft);color:var(--acc-ink)}
+.s0{background:var(--sec-soft);color:var(--sec)}
+.card.plan{border-style:dashed;background:transparent}
+.card.plan .t{color:var(--ink)}
+details.done{border:1px solid var(--line);border-radius:18px;background:var(--card);margin-top:8px}
+details.done summary{list-style:none;cursor:pointer;padding:16px 18px;display:flex;justify-content:space-between;align-items:center;font-size:15px}
+details.done summary::-webkit-details-marker{display:none}
+details.done summary .cnt{font-size:12px;color:var(--mut)}
+details.done summary:after{content:"＋";color:var(--mut);margin-left:10px}
+details.done[open] summary:after{content:"－"}
+.done-list{list-style:none;margin:0;padding:0 18px 10px;border-top:1px solid var(--line)}
+.done-list li{display:flex;gap:12px;align-items:baseline;padding:10px 0;border-bottom:1px solid var(--line);font-size:14px}
+.done-list li:last-child{border-bottom:0}
+.done-list .n{flex:0 0 auto}
+.done-list a{text-decoration:none;flex:1}
+.done-list .d{font-size:12px;color:var(--mut);white-space:nowrap}
+.gbox{border:1.5px solid var(--acc);border-radius:18px;padding:18px 18px 14px;margin-top:8px;position:relative}
+.gbox .gt{position:absolute;top:-11px;left:16px;background:var(--bg);padding:0 8px;font-size:12.5px;color:var(--acc-ink);letter-spacing:.06em}
+.gbox ul{margin:0;padding:0 0 0 18px;font-size:14px}
+.gbox li{margin:7px 0} .gbox li b{font-weight:400;color:var(--acc-ink)}
+.gbox .tlink{display:inline-block;margin-top:10px;font-size:13.5px;color:var(--acc-ink);text-decoration:none;border-bottom:1px solid var(--acc)}
+.back{font-size:13px;color:var(--mut);text-decoration:none;display:inline-block;margin-bottom:10px}
+.meta{display:flex;gap:12px;flex-wrap:wrap;font-size:13px;color:var(--mut);margin:6px 0 14px} .meta b{color:var(--ink);font-weight:400}
+.tools{display:flex;gap:8px;margin-bottom:18px}
+.tools .btn{flex:1;text-align:center}
+.toc{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:18px}
+.toc a{font-size:12.5px;text-decoration:none;color:var(--mut);background:var(--card);border:1px solid var(--line);border-radius:999px;padding:4px 10px}
+.toc a b{color:var(--acc-ink);margin-right:4px;font-variant-numeric:tabular-nums;font-weight:400}
+article{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px 20px;font-size:16.5px;line-height:1.9}
+article h2{font-size:18px;margin:34px 0 12px;padding-top:18px;border-top:1px solid var(--line);scroll-margin-top:14px}
+article h2:first-child{border-top:0;margin-top:0;padding-top:0}
+.time{display:inline-block;background:var(--acc-soft);color:var(--acc-ink);font-size:11.5px;padding:1px 8px;border-radius:6px;margin-right:8px;vertical-align:middle;font-variant-numeric:tabular-nums}
+article p{margin:0 0 13px}
+.note{margin:0 0 18px;padding:9px 14px;border-left:2px solid var(--acc);background:var(--quote-bg);color:var(--quote-ink);font-size:13.5px;border-radius:0 10px 10px 0}
+.screen{display:flex;gap:9px;align-items:flex-start;background:var(--screen-bg);color:var(--screen-ink);border-radius:10px;padding:8px 12px;font-size:13.5px;margin:4px 0 16px;line-height:1.5}
+.screen span{flex:0 0 auto;border:1px solid var(--screen-ink);color:var(--screen-ink);font-size:10.5px;padding:0 6px;border-radius:5px;margin-top:3px}
+mark{background:var(--acc-soft);color:var(--ink);padding:0 4px;border-radius:4px}
+figure{margin:6px 0 20px} figure img{width:100%;border-radius:12px;display:block} figcaption{font-size:12px;color:var(--mut);margin-top:6px;text-align:center}
+.src{font-size:12px;color:var(--mut);margin-top:22px;padding-top:12px;border-top:1px dashed var(--line)} .src a{word-break:break-all;color:var(--acc-ink)}
+.pr{position:fixed;inset:0;background:#000;color:#fff;z-index:50;display:none;flex-direction:column}
+.pr.on{display:flex}
+.pbar{display:flex;gap:12px;align-items:center;padding:10px 14px;background:#111;font-size:12.5px;color:#aaa;flex-wrap:wrap}
+.pbar button{background:#333;color:#fff;border:0;padding:7px 12px;border-radius:8px;font-family:inherit}
+.pbar input{width:90px;vertical-align:middle}
+.ptext{flex:1;overflow:auto;padding:40vh 7% 60vh;font-size:38px;line-height:1.7;font-weight:600}
+.ptext p{margin:0 0 .9em}.ptext h3{color:#D2AA6C;font-size:.55em;margin:1.6em 0 .6em}.ptext .ps{font-size:.45em;color:#A9C2B8;font-weight:400;margin:0 0 1em}
+@media print{.tools,.toc,.back,.pr,.topline{display:none!important}article{border:0;padding:0;font-size:14px}}
+</style></head><body>
+<div class="wrap">
+<div class="topline"></div>
+<a class="back" href="../">← 대본 보드</a>
+<div class="head"><span>뷰셀 · 3화</span><span>대본 완료</span></div>
+<h1>10년 안에 매출 열 배 뛴 브랜드·제품 — 언제, 무엇 때문에 터졌나</h1>
+<div class="meta"><span>음절 <b>1,730</b></span><span>예상 <b>5.8분</b></span><span>제공 2026-10-07 (수)</span><span>촬영 2026-10-09 (금)</span><span>공개 2026-10-14 (수)</span></div>
+<div class="tools"><button class="btn primary" id="tp">텔레프롬프터</button><button class="btn" onclick="window.print()">인쇄</button></div>
+<div class="toc"><a href="#t0-00"><b>0:00</b>훅</a>
+<a href="#t0-40"><b>0:40</b>자기소개·선언</a>
+<a href="#t1-30"><b>1:30</b>정의·프레임</a>
+<a href="#t3-00"><b>3:00</b>핵심 1: 조선미녀·티르티르·아누아</a>
+<a href="#t5-00"><b>5:00</b>핵심 2: 메디큐브·달바</a>
+<a href="#t7-00"><b>7:00</b>솔직 구간: 공통점 하나, 그리고 안 되는 것</a>
+<a href="#t8-30"><b>8:30</b>실행 과제</a>
+<a href="#t9-20"><b>9:20</b>예고·구독</a></div>
+<article><div class="note">톤: 차갑게. 단정문. 감정어 없음. 브랜드마다 &quot;터진 시점 → 트리거 → 숫자&quot; 세 줄만. 비교 구간(7:00)은 톤을 낮추고 천천히.</div>
+<div class="note">매출 수치는 각 사 공시·보도 기준(출처 하단). 틱톡 확산 시점·크리에이터 이름은 확인 필요, 자막에 넣지 말 것.</div>
+<h2 id="t0-00"><span class="time">0:00</span>훅</h2>
+<div class="screen"><span>화면</span>검은 화면. 자막 &quot;1억 → 3,309억&quot; 크게</div>
+<p>2020년 매출 1억이었던 브랜드가 있습니다.</p>
+<p>2024년, 3,309억입니다. 4년 만에 3천 배.</p>
+<p>조선미녀입니다.</p>
+<p>이 브랜드를 2021년까지 아는 한국 사람은 거의 없었습니다.</p>
+<p>오늘은 이런 브랜드 다섯 개를 봅니다.</p>
+<p>언제 터졌는지, 무엇이 방아쇠였는지, 그리고 다섯 개에 공통으로 있는 한 가지.</p>
+<p>그 한 가지를 알면, 다음에 터질 브랜드를 터지기 전에 볼 수 있습니다.</p>
+<h2 id="t0-40"><span class="time">0:40</span>자기소개·선언</h2>
+<p>저는 뷰셀입니다. 5개월 동안 화장품 셀러 200명을 배출했습니다.</p>
+<p>이 영상은 브랜드 칭찬이 아닙니다.</p>
+<p>셀러 입장에서 &quot;어느 시점에 들어갔어야 했는가&quot;를 보는 영상입니다.</p>
+<p>다섯 브랜드. 각각 세 줄입니다. 터진 시점, 방아쇠, 숫자.</p>
+<p>끝에 공통점 하나와, 지금 그 공통점이 보이는 브랜드를 말씀드립니다.</p>
+<h2 id="t1-30"><span class="time">1:30</span>정의·프레임</h2>
+<p>먼저 기준입니다.</p>
+<p>&quot;터졌다&quot;는 느낌이 아닙니다. 숫자입니다.</p>
+<p>이 영상에서는 1년 안에 매출이 두 배 이상 뛴 해를 &quot;터진 해&quot;로 봅니다.</p>
+<p>그리고 터진 해에는 반드시 방아쇠가 있습니다.</p>
+<p>방아쇠는 세 종류뿐입니다. 해외 바이럴, 유통 채널 진입, 그리고 인수 또는 상장.</p>
+<div class="screen"><span>화면</span>세 칸 — 해외 바이럴 / 채널 진입 / 인수·상장</div>
+<p>다섯 브랜드를 이 틀에 놓습니다.</p>
+<h2 id="t3-00"><span class="time">3:00</span>핵심 1: 조선미녀·티르티르·아누아</h2>
+<figure><img src="../assets/ep03_tenx.svg" alt="다섯 브랜드의 터진 해와 매출 — 전부 2022년 이후, 전부 해외에서"><figcaption>다섯 브랜드의 터진 해와 매출 — 전부 2022년 이후, 전부 해외에서</figcaption></figure>
+<p><b>첫째, 조선미녀.</b></p>
+<p>2020년 매출 1억. 2023년 1,395억. 2024년 연결 3,309억.</p>
+<p>방아쇠는 미국 틱톡. 쌀 선크림이 미국에서 먼저 팔렸습니다.</p>
+<p>국내 인지도가 생긴 건 그 다음입니다. 순서가 거꾸로였습니다.</p>
+<p>2024년에는 이 회사가 티르티르를 약 3,006억에, 라카를 약 483억에 샀습니다.</p>
+<p>1억이던 회사가 4년 뒤에 3천억짜리 회사를 사는 쪽이 됐습니다.</p>
+<p><b>둘째, 티르티르.</b></p>
+<p>2024년 매출 2,736억. 전년 대비 68% 증가.</p>
+<p>방아쇠는 쿠션 색상입니다.</p>
+<p>미국 흑인 크리에이터가 &quot;내 색이 없다&quot;고 올렸고, 티르티르는 3개였던 색을 45개로 늘렸습니다.</p>
+<p>2024년 6월, 국내 브랜드 최초로 아마존 뷰티 전체 1위.</p>
+<p>제품을 바꾼 게 아니라 색을 늘렸을 뿐입니다. 그게 방아쇠였습니다.</p>
+<p><b>셋째, 아누아.</b></p>
+<p>2023년 1,432억. 2024년 4,278억. 1년에 세 배.</p>
+<p>해외 매출이 966억에서 3,644억. 전체의 90%가 해외입니다.</p>
+<p>방아쇠는 어성초 토너의 아마존 성과. 2024년 아마존 톱 브랜드 선정.</p>
+<p>국내 화해 1위였던 제품이 미국에서 다시 한 번 터졌습니다.</p>
+<h2 id="t5-00"><span class="time">5:00</span>핵심 2: 메디큐브·달바</h2>
+<p><b>넷째, 메디큐브.</b></p>
+<p>2025년 단일 브랜드 매출 1조 4천억. 국내 브랜드 중 1위.</p>
+<p>화장품 1조, 뷰티 디바이스 4천억. 해외 매출 1조.</p>
+<p>방아쇠는 2021년에 낸 디바이스, 에이지알 부스터입니다.</p>
+<p>디바이스 매출은 4년 만에 약 100배.</p>
+<p>화장품만 팔던 브랜드가 &quot;기계 파는 브랜드&quot;로 바뀌면서 단가가 달라졌습니다.</p>
+<p><b>다섯째, 달바.</b></p>
+<p>2023년 2,008억. 2024년 3,091억.</p>
+<p>해외 비중이 22%에서 46%로, 1년 만에 두 배.</p>
+<p>방아쇠는 미스트 세럼 하나. 누적 5천만 병.</p>
+<p>2025년 5월 코스피 상장. 상장 직전 분기 해외 비중은 56%였습니다.</p>
+<p>다섯 개를 놓고 보면 숫자가 한 방향입니다.</p>
+<h2 id="t7-00"><span class="time">7:00</span>솔직 구간: 공통점 하나, 그리고 안 되는 것</h2>
+<div class="screen"><span>화면</span>톤 낮춤. 다섯 브랜드 이름 아래 &quot;해외&quot; 글자만 남김</div>
+<p>공통점은 하나입니다.</p>
+<p>다섯 브랜드 전부, 국내에서 터진 게 아니라 해외에서 먼저 터졌습니다.</p>
+<p>조선미녀는 미국 틱톡. 티르티르는 미국 아마존. 아누아는 아마존 톱 브랜드.</p>
+<p>메디큐브는 해외 매출 1조. 달바는 해외 비중 두 배.</p>
+<p>국내 1위가 먼저 된 브랜드는 다섯 중 하나도 없습니다.</p>
+<p>여기서 솔직하게 하나.</p>
+<p>이 다섯 브랜드를 지금 리셀하면 늦습니다.</p>
+<p>2024년에 아마존 1위를 찍은 브랜드는 이미 3단계, 올리브영 매대입니다.</p>
+<p>본사가 직접 미국에 창고를 두고 팝니다. 셀러가 끼어들 마진이 없습니다.</p>
+<p>셀러가 들어가야 하는 시점은 &quot;터진 해&quot;가 아닙니다. 터지기 1년 전입니다.</p>
+<p>조선미녀로 치면 2021년. 아누아로 치면 2022년.</p>
+<p>그때 신호가 있었습니다. 아마존 리뷰 수가 국내 리뷰 수를 넘는 순간입니다.</p>
+<p>그 신호는 지금도 공개돼 있습니다. 아마존에서 검색하면 누구나 봅니다.</p>
+<p>다만 아무도 안 봅니다.</p>
+<h2 id="t8-30"><span class="time">8:30</span>실행 과제</h2>
+<p>오늘 당장 할 것 셋입니다.</p>
+<p>첫째, 아마존에서 &quot;korean&quot;으로 검색해서 리뷰 1만 개 이하인 한국 브랜드 다섯 개를 적으세요. 1만 개 넘으면 이미 늦은 겁니다.</p>
+<p>둘째, 그 다섯 브랜드를 네이버 데이터랩에서 검색하세요. 아마존 리뷰는 느는데 국내 검색은 아직 평평한 브랜드. 그게 2021년의 조선미녀입니다.</p>
+<p>셋째, 그 브랜드가 도매꾹에 있는지 확인하세요. 없으면 그게 자리입니다.</p>
+<h2 id="t9-20"><span class="time">9:20</span>예고·구독</h2>
+<p>다음 영상은 숫자입니다.</p>
+<p>상품 하나를 잡고, 소싱가에서 공급가까지, 15%가 실제로 몇 %가 되는지 계산을 그대로 보여드리겠습니다.</p>
+<p>지금 시작하실 분은 설명란 카페에서 시작 체크리스트를 받아가시면 됩니다.</p>
+<p>뷰셀이었습니다.</p>
+<div class="screen"><span>화면</span>컷. 엔딩 카드 없음</div><div class="src"><b>참고·출처</b> (촬영일 기준 재확인)<div>· <a href="https://mstacc.com/blog/columns/business-analysis/goodai-global-financial-analysis" target="_blank" rel="noopener">구다이글로벌(조선미녀) 매출 2020년 1억→2023년 1,395억→2024년 3,309억, 티르티르·라카 인수 — mstacc 재무분석</a></div><div>· <a href="https://www.cncnews.co.kr/news/article.html?no=10017" target="_blank" rel="noopener">티르티르 2024년 매출 2,736억(+68%) — CNC뉴스</a></div><div>· <a href="https://www.nextunicorn.kr/insight/cf6c0bfdc5642366" target="_blank" rel="noopener">티르티르 쿠션 3색→45색, 2024.06 아마존 뷰티 1위 — 넥스트유니콘</a></div><div>· <a href="https://www.newswire.co.kr/newsRead.php?no=1010406" target="_blank" rel="noopener">더파운더즈(아누아) 2023년 1,432억→2024년 4,278억, 해외 3,644억 — 뉴스와이어</a></div><div>· <a href="https://apr-blog.com/medicube-2025earning" target="_blank" rel="noopener">메디큐브 2025년 매출 1조4천억(화장품 1조·디바이스 4천억·해외 1조), 디바이스 4년 100배 — 에이피알 블로그</a></div><div>· <a href="https://news.bizwatch.co.kr/article/consumer/2025/04/30/0033" target="_blank" rel="noopener">달바글로벌 2023년 2,008억→2024년 3,091억, 해외 비중 22.2→45.6%, 미스트 5천만 병 — 비즈워치</a></div></div></article>
+<footer>뷰셀 유튜브 · 대본 보드</footer>
+</div>
+<div class="pr" id="pr"><div class="pbar"><button id="pc">닫기</button><button id="pp">▶ / ❚❚</button><label>속도 <input id="sp" type="range" min="0" max="8" step=".5" value="2"></label><label>글자 <input id="sz" type="range" min="24" max="64" step="2" value="38"></label></div><div class="ptext" id="pt"><h3>0:00 · 훅</h3>
+<div class="ps">검은 화면. 자막 &quot;1억 → 3,309억&quot; 크게</div>
+<p>2020년 매출 1억이었던 브랜드가 있습니다.</p>
+<p>2024년, 3,309억입니다. 4년 만에 3천 배.</p>
+<p>조선미녀입니다.</p>
+<p>이 브랜드를 2021년까지 아는 한국 사람은 거의 없었습니다.</p>
+<p>오늘은 이런 브랜드 다섯 개를 봅니다.</p>
+<p>언제 터졌는지, 무엇이 방아쇠였는지, 그리고 다섯 개에 공통으로 있는 한 가지.</p>
+<p>그 한 가지를 알면, 다음에 터질 브랜드를 터지기 전에 볼 수 있습니다.</p>
+<h3>0:40 · 자기소개·선언</h3>
+<p>저는 뷰셀입니다. 5개월 동안 화장품 셀러 200명을 배출했습니다.</p>
+<p>이 영상은 브랜드 칭찬이 아닙니다.</p>
+<p>셀러 입장에서 &quot;어느 시점에 들어갔어야 했는가&quot;를 보는 영상입니다.</p>
+<p>다섯 브랜드. 각각 세 줄입니다. 터진 시점, 방아쇠, 숫자.</p>
+<p>끝에 공통점 하나와, 지금 그 공통점이 보이는 브랜드를 말씀드립니다.</p>
+<h3>1:30 · 정의·프레임</h3>
+<p>먼저 기준입니다.</p>
+<p>&quot;터졌다&quot;는 느낌이 아닙니다. 숫자입니다.</p>
+<p>이 영상에서는 1년 안에 매출이 두 배 이상 뛴 해를 &quot;터진 해&quot;로 봅니다.</p>
+<p>그리고 터진 해에는 반드시 방아쇠가 있습니다.</p>
+<p>방아쇠는 세 종류뿐입니다. 해외 바이럴, 유통 채널 진입, 그리고 인수 또는 상장.</p>
+<div class="ps">세 칸 — 해외 바이럴 / 채널 진입 / 인수·상장</div>
+<p>다섯 브랜드를 이 틀에 놓습니다.</p>
+<h3>3:00 · 핵심 1: 조선미녀·티르티르·아누아</h3>
+<p>**첫째, 조선미녀.**</p>
+<p>2020년 매출 1억. 2023년 1,395억. 2024년 연결 3,309억.</p>
+<p>방아쇠는 미국 틱톡. 쌀 선크림이 미국에서 먼저 팔렸습니다.</p>
+<p>국내 인지도가 생긴 건 그 다음입니다. 순서가 거꾸로였습니다.</p>
+<p>2024년에는 이 회사가 티르티르를 약 3,006억에, 라카를 약 483억에 샀습니다.</p>
+<p>1억이던 회사가 4년 뒤에 3천억짜리 회사를 사는 쪽이 됐습니다.</p>
+<p>**둘째, 티르티르.**</p>
+<p>2024년 매출 2,736억. 전년 대비 68% 증가.</p>
+<p>방아쇠는 쿠션 색상입니다.</p>
+<p>미국 흑인 크리에이터가 &quot;내 색이 없다&quot;고 올렸고, 티르티르는 3개였던 색을 45개로 늘렸습니다.</p>
+<p>2024년 6월, 국내 브랜드 최초로 아마존 뷰티 전체 1위.</p>
+<p>제품을 바꾼 게 아니라 색을 늘렸을 뿐입니다. 그게 방아쇠였습니다.</p>
+<p>**셋째, 아누아.**</p>
+<p>2023년 1,432억. 2024년 4,278억. 1년에 세 배.</p>
+<p>해외 매출이 966억에서 3,644억. 전체의 90%가 해외입니다.</p>
+<p>방아쇠는 어성초 토너의 아마존 성과. 2024년 아마존 톱 브랜드 선정.</p>
+<p>국내 화해 1위였던 제품이 미국에서 다시 한 번 터졌습니다.</p>
+<h3>5:00 · 핵심 2: 메디큐브·달바</h3>
+<p>**넷째, 메디큐브.**</p>
+<p>2025년 단일 브랜드 매출 1조 4천억. 국내 브랜드 중 1위.</p>
+<p>화장품 1조, 뷰티 디바이스 4천억. 해외 매출 1조.</p>
+<p>방아쇠는 2021년에 낸 디바이스, 에이지알 부스터입니다.</p>
+<p>디바이스 매출은 4년 만에 약 100배.</p>
+<p>화장품만 팔던 브랜드가 &quot;기계 파는 브랜드&quot;로 바뀌면서 단가가 달라졌습니다.</p>
+<p>**다섯째, 달바.**</p>
+<p>2023년 2,008억. 2024년 3,091억.</p>
+<p>해외 비중이 22%에서 46%로, 1년 만에 두 배.</p>
+<p>방아쇠는 미스트 세럼 하나. 누적 5천만 병.</p>
+<p>2025년 5월 코스피 상장. 상장 직전 분기 해외 비중은 56%였습니다.</p>
+<p>다섯 개를 놓고 보면 숫자가 한 방향입니다.</p>
+<h3>7:00 · 솔직 구간: 공통점 하나, 그리고 안 되는 것</h3>
+<div class="ps">톤 낮춤. 다섯 브랜드 이름 아래 &quot;해외&quot; 글자만 남김</div>
+<p>공통점은 하나입니다.</p>
+<p>다섯 브랜드 전부, 국내에서 터진 게 아니라 해외에서 먼저 터졌습니다.</p>
+<p>조선미녀는 미국 틱톡. 티르티르는 미국 아마존. 아누아는 아마존 톱 브랜드.</p>
+<p>메디큐브는 해외 매출 1조. 달바는 해외 비중 두 배.</p>
+<p>국내 1위가 먼저 된 브랜드는 다섯 중 하나도 없습니다.</p>
+<p>여기서 솔직하게 하나.</p>
+<p>이 다섯 브랜드를 지금 리셀하면 늦습니다.</p>
+<p>2024년에 아마존 1위를 찍은 브랜드는 이미 3단계, 올리브영 매대입니다.</p>
+<p>본사가 직접 미국에 창고를 두고 팝니다. 셀러가 끼어들 마진이 없습니다.</p>
+<p>셀러가 들어가야 하는 시점은 &quot;터진 해&quot;가 아닙니다. 터지기 1년 전입니다.</p>
+<p>조선미녀로 치면 2021년. 아누아로 치면 2022년.</p>
+<p>그때 신호가 있었습니다. 아마존 리뷰 수가 국내 리뷰 수를 넘는 순간입니다.</p>
+<p>그 신호는 지금도 공개돼 있습니다. 아마존에서 검색하면 누구나 봅니다.</p>
+<p>다만 아무도 안 봅니다.</p>
+<h3>8:30 · 실행 과제</h3>
+<p>오늘 당장 할 것 셋입니다.</p>
+<p>첫째, 아마존에서 &quot;korean&quot;으로 검색해서 리뷰 1만 개 이하인 한국 브랜드 다섯 개를 적으세요. 1만 개 넘으면 이미 늦은 겁니다.</p>
+<p>둘째, 그 다섯 브랜드를 네이버 데이터랩에서 검색하세요. 아마존 리뷰는 느는데 국내 검색은 아직 평평한 브랜드. 그게 2021년의 조선미녀입니다.</p>
+<p>셋째, 그 브랜드가 도매꾹에 있는지 확인하세요. 없으면 그게 자리입니다.</p>
+<h3>9:20 · 예고·구독</h3>
+<p>다음 영상은 숫자입니다.</p>
+<p>상품 하나를 잡고, 소싱가에서 공급가까지, 15%가 실제로 몇 %가 되는지 계산을 그대로 보여드리겠습니다.</p>
+<p>지금 시작하실 분은 설명란 카페에서 시작 체크리스트를 받아가시면 됩니다.</p>
+<p>뷰셀이었습니다.</p>
+<div class="ps">컷. 엔딩 카드 없음</div></div></div>
+<script>
+const P=document.getElementById('pr'),T=document.getElementById('pt');let sp=2,run=false,raf;
+const tick=()=>{if(run)T.scrollTop+=sp/2;raf=requestAnimationFrame(tick)};
+document.getElementById('tp').onclick=()=>{P.classList.add('on');T.scrollTop=0;run=false;cancelAnimationFrame(raf);tick()};
+document.getElementById('pc').onclick=()=>{P.classList.remove('on');run=false;cancelAnimationFrame(raf)};
+document.getElementById('pp').onclick=()=>run=!run;
+document.getElementById('sp').oninput=e=>sp=+e.target.value;
+document.getElementById('sz').oninput=e=>T.style.fontSize=e.target.value+'px';
+document.addEventListener('keydown',e=>{if(!P.classList.contains('on'))return;
+ if(e.code==='Space'){e.preventDefault();run=!run}
+ if(e.code==='ArrowUp'){sp=Math.min(8,sp+.5);document.getElementById('sp').value=sp}
+ if(e.code==='ArrowDown'){sp=Math.max(0,sp-.5);document.getElementById('sp').value=sp}
+ if(e.code==='Escape')document.getElementById('pc').click()});
+</script>
+</body></html>
